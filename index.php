@@ -46,7 +46,7 @@ include("PHPfunctions.php");
                     <li><a href="blog.php?header=All Blog Items">All Blog Items</a> </li>
                     <li><a href="blog.php?header=Work Items&category=work">Work Blog Items</a> </li>
                     <li><a href="blog.php?header=University Items&category=university">University Blog Items</a> </li>
-                    <li><a href="blog.php?header=Family Items&category=home">Family Blog Items</a> </li>
+                    <li><a href="blog.php?header=Family Items&category=family">Family Blog Items</a> </li>
                     <li><a href="add.php?header=Insert a Blog Item">Insert Blog Items</a> </li>
                 </ul>
 
