@@ -90,7 +90,7 @@ function additemsdetails(){
             $category = $_POST["category"];
             $submitter = $_POST["submitter"];
 
-            $sql = "INSERT INTO `blogView` (`entryTitle`, `entrySummary`, `category`, `submitter` ) VALUES ('$entryTitle', '$entrySummary', '$category', $submitter)";
+            $sql = "INSERT INTO `blogView` (`entryTitle`, `entrySummary`, `category`, `submitter` ) VALUES ('$entryTitle', '$entrySummary', '$category', '$submitter')";
 
             $db = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 
