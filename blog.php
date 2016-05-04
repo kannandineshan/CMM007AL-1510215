@@ -70,15 +70,15 @@
             <section class="content">
 
 
-                    <section class="title"> entryTitle: Today at work</section>
+                    <section class="title"> entryTitle:</section> Today at work
 
-                    <section class="title">submitter: Adam</section>
+                    <section class="title">submitter:</section> Adam
 
-                    <section class="title">category: Work</section>
+                    <section class="title">category:</section> Work
 
-                    <section class="title"> entrySummary: Today I went to work and did lots of very complicated coding things.
+                    <section class="title"> entrySummary:</section>Today I went to work and did lots of very complicated coding things.
                         I was very pleased that I managed to finish them all
-                    </section>
+
 
 
 
