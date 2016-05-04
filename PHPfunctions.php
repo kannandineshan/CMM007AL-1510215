@@ -3,6 +3,17 @@ include("connection.php");
 
 
 
+include("connection.php");
+
+
+function getheader(){
+
+    $header = $_GET["header"];
+
+    echo $header;
+}
+
+
 
 function getitemsdetails(){
 
