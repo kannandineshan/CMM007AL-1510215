@@ -59,11 +59,11 @@ function additemsdetails(){
     else {
 
 
-        //read input details from addbugs.php
+        //read input details from add.php
         $entryTitle = $_POST['entryTitle'];
 
 
-        //create select statement to using firstname and surname as filters
+        //create select statement to using entrytitle
         $query = "SELECT `entryTitle` FROM `blogView` WHERE `entryTitle` ='$entryTitle' LIMIT 1";
 
         $db = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
@@ -75,11 +75,11 @@ function additemsdetails(){
 
         //go through the array of results returned from the query if any
         while ($row = $output->fetch_assoc()) {
-            $return = $row["entryTitle"];//add the email value to the return variable
+            $return = $row["entryTitle"];//add the title value to the return variable
         }
 
 
-        //if $return is no longer NULL, then it means user exists already
+        //if $return is no longer NULL, then it means item exists already
         if (isset($return)) {
             header("Location: blog.php?Success=No");
         } else {
