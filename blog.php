@@ -69,7 +69,7 @@
 
             <section class="content">
 
-                <p>
+
                     <section class="title"> entryTitle: Today at work</section>
 
                     <section class="title">submitter: Adam</section>
@@ -80,7 +80,7 @@
                         I was very pleased that I managed to finish them all
                     </section>
 
-                </p>
+
 
             </section>
 
