@@ -37,6 +37,13 @@ body{
     flex-direction: column;
 }
 
+h1{
+    font-size: 20px;
+}
+
+h3{
+   font-weight:normal;
+}
 
 /**********************************************************************************************************************/
 
@@ -52,7 +59,7 @@ nav>ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: lightgreen;
 }
 
 
@@ -70,7 +77,7 @@ nav>ul>li a {
 }
 
 li a:hover{
-    color: #999999;
+    color: red;
 }
 /**********************************************************************************************************************/
 
@@ -102,9 +109,9 @@ li a:hover{
 }
 
 .content{
-    max-width: 300px;
+    max-width: 500px;
     padding: 10px 10px 10px 10px;
-    background-color: aliceblue;
+    background: lightblue;
     border-radius: 15px;
     box-shadow: 0 9px #999;
 }
