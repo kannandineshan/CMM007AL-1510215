@@ -1,5 +1,5 @@
 <?php
-
+include("PHPfunctions.php");
 
 ?>
 
@@ -67,22 +67,114 @@
 
         <section class="container-content" id="content-index">
 
-            <section class="content">
+            <?php
+
+            $success = $_GET["Success"];
+
+            if ($success == "Yes") {
+                echo "<SCRIPT>alert('New Item Has Been Added To The Database!!!');</SCRIPT>";
+
+                $result = getitemsdetails();
+
+                if (mysqli_num_rows($result) > 0) {
+
+                    $counter = 0;
+
+                    while ($row = mysqli_fetch_array($result)) {
+
+                        $counter++
+                        ?>
+                        <section class="content">
+
+                            <section class="title"> entryTitle:</section> Today<?php echo $entryTitle; ?>
 
 
-                    <section class="title"> entryTitle:</section> Today at work
-
-                    <section class="title">submitter:</section> Adam
-
-                    <section class="title">category:</section> Work
-
-                    <section class="title"> entrySummary:</section>Today I went to work and did lots of very complicated coding things.
-                        I was very pleased that I managed to finish them all
+                            <section class="title">submitter:</section> <?php echo $row['submitter']; ?>
 
 
+                            <section class="title">category:</section><?php echo $row['category']; ?>
 
 
-            </section>
+                            <section class="title"> entrySummary:</section><?php echo $row['entrySummary']; ?>
+
+                        </section>
+                        <br>
+
+                        <?php
+
+                    }//end of for loop
+                }//end if statement
+
+
+
+            } elseif ($success == "No") {
+                echo "<script>alert('Item With This Name Already Exists In The Database');</script>";
+
+                $result = getitemsdetails();
+
+                if (mysqli_num_rows($result) > 0) {
+
+                    $counter = 0;
+
+                    while ($row = mysqli_fetch_array($result)) {
+
+                        $counter++;
+                        ?>
+                        <section class="content">
+
+                            <section class="title"> entryTitle:</section> Today<?php echo $entryTitle; ?>
+
+
+                            <section class="title">submitter:</section> <?php echo $row['submitter']; ?>
+
+
+                            <section class="title">category:</section><?php echo $row['category']; ?>
+
+
+                            <section class="title"> entrySummary:</section><?php echo $row['entrySummary']; ?>
+
+                        </section>
+                        <br>
+
+                        <?php
+
+                    }//end of for loop
+                }//end if statement
+
+
+            } elseif ($success == null) {
+                $result = getitemsdetails();
+
+                if (mysqli_num_rows($result) > 0) {
+
+                    $counter = 0;
+
+                    while ($row = mysqli_fetch_array($result)) {
+
+                        $counter++;
+                        ?>
+                        <section class="content">
+
+                            <section class="title"> entryTitle:</section> Today<?php echo $entryTitle; ?>
+
+
+                            <section class="title">submitter:</section> <?php echo $row['submitter']; ?>
+
+
+                            <section class="title">category:</section><?php echo $row['category']; ?>
+
+
+                            <section class="title"> entrySummary:</section><?php echo $row['entrySummary']; ?>
+
+                        </section>
+                        <br>
+
+                        <?php
+
+                    }//end of for loop
+                }//end if statement
+            }
+            ?>
 
         </section>
 
