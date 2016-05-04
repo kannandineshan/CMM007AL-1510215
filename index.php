@@ -1,5 +1,5 @@
 <?php
-
+include("PHPfunctions.php");
 
 ?>
 
@@ -31,6 +31,7 @@
         <section class="headercontainer">
             <h1>myBlog</h1>
             <h3>because the internet needs to know what I think</h3>
+            <h3><?php getheader(); ?></h3>
         </section>
 
 
@@ -41,11 +42,12 @@
             <nav>
 
                 <ul>
-                    <li><a href="blog.php">All Blog Items</a> </li>
-                    <li><a href="blog.php">Work Blog Items</a> </li>
-                    <li><a href="blog.php">University Blog Items</a> </li>
-                    <li><a href="blog.php">Family Blog Items</a> </li>
-                    <li><a href="add.php">Insert Blog Items</a> </li>
+                    <li><a href="index.php?header=Home">Home</a> </li>
+                    <li><a href="blog.php?header=All Blog Items">All Blog Items</a> </li>
+                    <li><a href="blog.php?header=Work Items">Work Blog Items</a> </li>
+                    <li><a href="blog.php?header=University Items">University Blog Items</a> </li>
+                    <li><a href="blog.php?header=Family Items">Family Blog Items</a> </li>
+                    <li><a href="add.php?header=Insert a Blog Item">Insert Blog Items</a> </li>
                 </ul>
 
             </nav>
