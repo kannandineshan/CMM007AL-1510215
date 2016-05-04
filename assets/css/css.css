@@ -4,7 +4,7 @@
 
 body{
     font-family: 'Metrophobic', Arial, serif; font-weight: 400;
-    max-width: 800px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     border: solid;
@@ -32,7 +32,7 @@ body{
 
 /*                                                    [header section]                                                */
 
-#head{
+#header{
     display: flex;
     flex-direction: column;
 }
@@ -47,18 +47,30 @@ body{
 /*                                             [navigation section of header]                                         */
 
 
-ul {
+nav>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-li a {
-    display: inline-block;
 
-    padding: 0 10px 10px 10px;
+nav>ul>li {
+    float: left;
+}
+
+
+nav>ul>li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 10px 30px;
     text-decoration: none;
-    margin: 5px;
+}
+
+li a:hover{
+    color: #999999;
 }
 /**********************************************************************************************************************/
 
@@ -76,7 +88,7 @@ li a {
 }
 
 #logo{
-    max-width: 200px;
+    max-width: 300px;
 }
 
 /*================================ whole content ================================*/
@@ -90,8 +102,8 @@ li a {
 }
 
 .content{
-
-    padding: 10px 10px 30px 10px;
+    max-width: 300px;
+    padding: 10px 10px 10px 10px;
     background-color: aliceblue;
     border-radius: 15px;
     box-shadow: 0 9px #999;
@@ -100,7 +112,9 @@ li a {
 /*---------------------------------content-index -----------------------------*/
 
 p{
-    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 /*------------------------------- content-showbugs --------------------------*/
