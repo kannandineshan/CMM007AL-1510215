@@ -1,4 +1,6 @@
 <?php
+include("PHPfunctions.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -63,36 +65,47 @@
     <section class="container" id="main">
 
 
-        <section class="container-content" id="content-index">
+        <section class="container-content">
+            <?php
+            if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
-            <section class="content">
+                ?>
+                <section class="content">
 
-                <p>
-                <form action="" method="post">
+                    <form action="" method="post">
 
-                    <label for="entryTitle">Entry Title:</label>
-                    <input required type="text" id="entryTitle" name="entryTitle">
-                    <br>
-                    <label for="entrySummary">Entry Summary:</label>
-                    <textarea required id="entrySummary" name="entrySummary"></textarea>
-                    <br>
-                    <label for="category">Category:</label>
-                    <select required name="category" id="category">
-                        <option value="">Select location</option>
-                        <option value="politics">Politics</option>
-                        <option value="sport">Sport</option>
-                        <option value="technology">Technology</option>
-                    </select>
-                    <label for="submitter">Submited By:</label>
-                    <input type="text" id="submitter" name="submitter">
-                    <br>
-                    <br>
-                    <input type="submit" value="Submit" id="submit">
+                        <label for="entryTitle">Entry Title:</label>
+                        <input required type="text" id="entryTitle" name="entryTitle">
+                        <br>
+                        <label for="entrySummary">Entry Summary:</label>
+                        <textarea required id="entrySummary" name="entrySummary"></textarea>
+                        <br>
+                        <label for="category">Category:</label>
+                        <select required name="category" id="category">
+                            <option value="">Select location</option>
+                            <option value="politics">Politics</option>
+                            <option value="sport">Sport</option>
+                            <option value="technology">Technology</option>
+                        </select>
+                        <label for="submitter">Submited By:</label>
+                        <input type="text" id="submitter" name="submitter">
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit" id="submit">
 
-                </form>
-                </p>
+                    </form>
 
-            </section>
+                </section>
+                <?php
+            } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                additemsdetails();
+
+            } else {
+                header("Location: index.php");
+
+            }
+            ?>
+
 
         </section>
 
