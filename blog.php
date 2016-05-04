@@ -43,9 +43,9 @@ include("PHPfunctions.php");
                 <ul>
                     <li><a href="index.php?header=Home">Home</a> </li>
                     <li><a href="blog.php?header=All Blog Items">All Blog Items</a> </li>
-                    <li><a href="blog.php?header=Work Items">Work Blog Items</a> </li>
-                    <li><a href="blog.php?header=University Items">University Blog Items</a> </li>
-                    <li><a href="blog.php?header=Family Items">Family Blog Items</a> </li>
+                    <li><a href="blog.php?header=Work Items&category=work">Work Blog Items</a> </li>
+                    <li><a href="blog.php?header=University Items&category=university">University Blog Items</a> </li>
+                    <li><a href="blog.php?header=Family Items&category=home">Family Blog Items</a> </li>
                     <li><a href="add.php?header=Insert a Blog Item">Insert Blog Items</a> </li>
                 </ul>
 

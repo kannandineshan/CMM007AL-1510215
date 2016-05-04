@@ -43,9 +43,9 @@ include("PHPfunctions.php");
                 <ul>
                     <li><a href="index.php?header=Home">Home</a> </li>
                     <li><a href="blog.php?header=All Blog Items">All Blog Items</a> </li>
-                    <li><a href="blog.php?header=Work Items">Work Blog Items</a> </li>
-                    <li><a href="blog.php?header=University Items">University Blog Items</a> </li>
-                    <li><a href="blog.php?header=Family Items">Family Blog Items</a> </li>
+                    <li><a href="blog.php?header=Work Items&category=work">Work Blog Items</a> </li>
+                    <li><a href="blog.php?header=University Items&category=university">University Blog Items</a> </li>
+                    <li><a href="blog.php?header=Family Items&category=home">Family Blog Items</a> </li>
                     <li><a href="add.php?header=Insert a Blog Item">Insert Blog Items</a> </li>
                 </ul>
 
@@ -85,9 +85,9 @@ include("PHPfunctions.php");
                         <label for="category">Category:</label>
                         <select required name="category" id="category">
                             <option value="">Select location</option>
-                            <option value="politics">Politics</option>
-                            <option value="sport">Sport</option>
-                            <option value="technology">Technology</option>
+                            <option value="work">Work</option>
+                            <option value="university">University</option>
+                            <option value="home">Home</option>
                         </select>
                         <label for="submitter">Submited By:</label>
                         <input type="text" id="submitter" name="submitter">
