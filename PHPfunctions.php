@@ -82,6 +82,8 @@ function additemsdetails(){
         //if $return is no longer NULL, then it means item exists already
         if (isset($return)) {
             header("Location: blog.php?Success=No");
+
+            //else create new item
         } else {
 
 
