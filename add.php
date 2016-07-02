@@ -87,7 +87,7 @@ include("PHPfunctions.php");
                             <option value="">Select location</option>
                             <option value="work">Work</option>
                             <option value="university">University</option>
-                            <option value="home">Family</option>
+                            <option value="family">Family</option>
                         </select>
                         <label for="submitter">Submited By:</label>
                         <input type="text" id="submitter" name="submitter">
