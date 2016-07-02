@@ -88,10 +88,10 @@ include("PHPfunctions.php");
                         ?>
                         <section class="content">
 
-                            <section class="title"> entryTitle:</section> Today<?php echo $entryTitle; ?>
+                            <section class="title">Title:</section><?php echo $row['entryTitle']; ?>
 
 
-                            <section class="title">submitter:</section> <?php echo $row['submitter']; ?>
+                            <section class="title">submitter:</section><?php echo $row['submitter']; ?>
 
 
                             <section class="title">category:</section><?php echo $row['category']; ?>
@@ -124,10 +124,10 @@ include("PHPfunctions.php");
                         ?>
                         <section class="content">
 
-                            <section class="title"> entryTitle:</section> Today<?php echo $entryTitle; ?>
+                            <section class="title">Title:</section><?php echo $row['entryTitle']; ?>
 
 
-                            <section class="title">submitter:</section> <?php echo $row['submitter']; ?>
+                            <section class="title">submitter:</section><?php echo $row['submitter']; ?>
 
 
                             <section class="title">category:</section><?php echo $row['category']; ?>
@@ -157,10 +157,10 @@ include("PHPfunctions.php");
                         ?>
                         <section class="content">
 
-                            <section class="title"> entryTitle:</section> Today<?php echo $entryTitle; ?>
+                            <section class="title">Title:</section><?php echo $row['entryTitle']; ?>
 
 
-                            <section class="title">submitter:</section> <?php echo $row['submitter']; ?>
+                            <section class="title">submitter:</section><?php echo $row['submitter']; ?>
 
 
                             <section class="title">category:</section><?php echo $row['category']; ?>
