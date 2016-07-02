@@ -91,13 +91,13 @@ include("PHPfunctions.php");
                             <section class="title">Title:</section><?php echo $row['entryTitle']; ?>
 
 
-                            <section class="title">submitter:</section><?php echo $row['submitter']; ?>
+                            <section class="title">Submitter:</section><?php echo $row['submitter']; ?>
 
 
-                            <section class="title">category:</section><?php echo $row['category']; ?>
+                            <section class="title">Category:</section><?php echo $row['category']; ?>
 
 
-                            <section class="title"> entrySummary:</section><?php echo $row['entrySummary']; ?>
+                            <section class="title">Summary:</section><?php echo $row['entrySummary']; ?>
 
                         </section>
                         <br>
@@ -127,13 +127,13 @@ include("PHPfunctions.php");
                             <section class="title">Title:</section><?php echo $row['entryTitle']; ?>
 
 
-                            <section class="title">submitter:</section><?php echo $row['submitter']; ?>
+                            <section class="title">Submitter:</section><?php echo $row['submitter']; ?>
 
 
-                            <section class="title">category:</section><?php echo $row['category']; ?>
+                            <section class="title">Category:</section><?php echo $row['category']; ?>
 
 
-                            <section class="title"> entrySummary:</section><?php echo $row['entrySummary']; ?>
+                            <section class="title">Summary:</section><?php echo $row['entrySummary']; ?>
 
                         </section>
                         <br>
@@ -160,13 +160,13 @@ include("PHPfunctions.php");
                             <section class="title">Title:</section><?php echo $row['entryTitle']; ?>
 
 
-                            <section class="title">submitter:</section><?php echo $row['submitter']; ?>
+                            <section class="title">Submitter:</section><?php echo $row['submitter']; ?>
 
 
-                            <section class="title">category:</section><?php echo $row['category']; ?>
+                            <section class="title">Category:</section><?php echo $row['category']; ?>
 
 
-                            <section class="title"> entrySummary:</section><?php echo $row['entrySummary']; ?>
+                            <section class="title">Summary:</section><?php echo $row['entrySummary']; ?>
 
                         </section>
                         <br>
